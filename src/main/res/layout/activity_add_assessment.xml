@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAssessmentActivity">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/assessments"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addAssessmentReminderSwitch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/addAssessmentReminderSwitch"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:text="@string/reminder"
+        app:layout_constraintBottom_toTopOf="@+id/assessmentGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <EditText
+        android:id="@+id/titleBox"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/startDateBox"
+        app:layout_constraintStart_toStartOf="@+id/assessmentGroup"
+        app:layout_constraintTop_toBottomOf="@+id/assessmentGroup"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/notesBox"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/notes"
+        android:inputType="textAutoCorrect|textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/cancel"
+        app:layout_constraintStart_toStartOf="@+id/startDateBox"
+        app:layout_constraintTop_toBottomOf="@+id/startDateBox"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/startDateBox"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/dueDate"
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/notesBox"
+        app:layout_constraintStart_toStartOf="@+id/titleBox"
+        app:layout_constraintTop_toBottomOf="@+id/titleBox"
+        tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick"
+        android:text="@string/cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick"
+        android:text="@string/submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/assessmentGroup"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/titleBox"
+        app:layout_constraintStart_toStartOf="@+id/addAssessmentReminderSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/addAssessmentReminderSwitch">
+
+        <RadioButton
+            android:id="@+id/performanceRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/performanceAssessment" />
+
+        <RadioButton
+            android:id="@+id/objectiveRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/objectiveAssessment"
+            android:checked="true" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>

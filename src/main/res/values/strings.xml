@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">WGU Mobile App</string>
+    <string name="viewCourses">View Courses</string>
+    <string name="viewAssessments">View Assessments</string>
+    <string name="viewMentors">View Mentors</string>
+    <string name="viewTerms">View Terms</string>
+    <string name="wgu">WGU</string>
+    <string name="courses">Courses</string>
+    <string name="assessments">Assessments</string>
+    <string name="mentors">Mentors</string>
+    <string name="terms">Terms</string>
+    <string name="performanceAssessment">Performance Assessment</string>
+    <string name="objectiveAssessment">Objective Assessment</string>
+    <string name="submit">Submit</string>
+    <string name="dueDate">Due Date</string>
+    <string name="notes">Notes (optional)</string>
+    <string name="title">Title</string>
+    <string name="startDate">Start Date</string>
+    <string name="endDate">End Date</string>
+    <string name="phone">Phone Number</string>
+    <string name="email">E-Mail Address</string>
+    <string name="cancel">Cancel</string>
+    <string name="mentor">Mentor</string>
+    <string name="name">name</string>
+    <string name="courseStatus">Course Status</string>
+    <string-array name="courseStatusEntries">
+        <item>Upcoming</item>
+        <item>In Progress</item>
+        <item>Completed</item>
+        <item>Dropped</item>
+    </string-array>
+    <string name="delete">Delete</string>
+    <string name="term">Term</string>
+    <string name="showCourses">Show Courses</string>
+    <string name="reminder">Reminder</string>
+    <string name="startReminder">Start Date Reminder</string>
+    <string name="endReminder">End Date Reminder</string>
+</resources>
